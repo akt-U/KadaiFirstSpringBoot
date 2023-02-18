@@ -46,9 +46,9 @@ public class KadaiFirstController {
         @GetMapping("/divide/{val1}/{val2}")
         public String calcDivide(@PathVariable double val1, @PathVariable double val2) {
             double res = 0;
-            if(val2==0) {
+            /*if(val2==0) {
                 throw new IllegalArgumentException("0を入力しないでください。");
-            }
+            }*/
             res = val1 / val2;
             return "実行結果：" + res;
         }
